@@ -21,6 +21,48 @@ export default {
 
 <template>
     <footer>
+
+        <div class="container flex ">
+            <div>
+                <ul>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+            </ul>
+
+            <ul>
+                <li>prova</li>
+                <li>prova</li>
+            </ul>
+            </div>
+            
+
+            <ul>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+            </ul>
+
+            <ul>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+                <li>prova</li>
+            </ul>
+        </div>
+        
         <div class="container-2 flex space-beetwen color-darkgray">
 
             <div class="flex align-items">

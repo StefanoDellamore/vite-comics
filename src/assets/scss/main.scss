@@ -17,7 +17,7 @@
 }
 
 img {
-    width: 100%;
+    height: 100%;
 }
 
 .flex {
@@ -86,3 +86,20 @@ a {
 .margin-left-10 {
     margin-left: 10px;
 }
+
+.single-film {
+    width: calc(100% / 6);
+    height: 200px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.container-img2 {
+    width: 100%;
+    height: 160px;
+}
+
