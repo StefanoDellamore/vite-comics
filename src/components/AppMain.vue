@@ -1,16 +1,34 @@
 <script>
 import SingleFilm from './SingleFilm.vue';
+import SingleIcon from './SingleIcon.vue';
 
 export default {
     data() {
         return {
-            navElem: [
-                "digital comics",
-                "dc merchandise",
-                "subcription",
-                "comics shop locator",
-                "dc powe visa"
+            navIcon: [
+                {
+                    "name": "digital comics",
+                    "image": "/img/buy-comics-digital-comics.png",
+                },
+                {
+                    "name": "dc merchandise",
+                    "image": "/img/buy-comics-merchandise.png",
+                },
+                {
+                    "name": "subcription",
+                    "image": "/img/buy-comics-subscriptions.png",
+                },
+                {
+                    "name": "comics shop locator",
+                    "image": "/img/buy-comics-shop-locator.png",
+                },
+                {
+                    "name": "dc powe visa",
+                    "image": "/img/buy-dc-power-visa.svg",
+                },
+                     
             ],
+
             films:[
             {
                 "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
@@ -84,11 +102,13 @@ export default {
                 "series": "Catwoman",
                 "type": "graphic novel",
             },
-            ]
+            ],
+
         };
     },
     components: {
-        SingleFilm
+        SingleFilm,
+        SingleIcon,
     }
 }
 </script>
@@ -96,6 +116,10 @@ export default {
 <template>
     <main>
         <div class="container-2 background-black">
+            <div class="container-backgruond">
+            
+            </div>
+
             <div class="container flex wrap">
                 <SingleFilm
                     v-for="(film, i) in films"
@@ -103,22 +127,22 @@ export default {
                     :series="film.series"
                     :thumb="film.thumb" />
             </div>
+
+            <div class="button-main flex justify-content-center">
+                <button id="button-main">read more</button>
+            </div>
         </div>
 
-        <div>
-            <ul class="flex justify-content-center background-blu">
-                <li v-for="(elem, i) in navElem" class="flex align-items">
-                    <div class="container-img">
-                        <img src="/img/dc-logo.png" alt="">
-                    </div>
-                    <a class="color-white" href="">
-                        {{ elem }}
-                    </a>
-                </li>
-            </ul>
+        <div class="container-2 flex wrap background-blu">
+            <SingleIcon
+                v-for="(icon, j) in navIcon"
+                :key="j"
+                :name="icon.name"
+                :image="icon.image"
+            />
         </div>
-
         
+
     </main>
 </template>
 

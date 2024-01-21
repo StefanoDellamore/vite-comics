@@ -22,7 +22,7 @@ export default {
 <template>
     <footer>
 
-        <div class="container flex ">
+        <div class="container-2 backgruond-footer flex justify-content-center">
             <div>
                 <ul>
                 <li>prova</li>
@@ -61,18 +61,22 @@ export default {
                 <li>prova</li>
                 <li>prova</li>
             </ul>
+
+            <div class="logo-hover">
+                <div id="log-dc"></div>
+            </div>
         </div>
         
-        <div class="container-2 flex space-beetwen color-darkgray">
+        <div class="container-2 flex space-beetwen background-black2">
 
             <div class="flex align-items">
                 <button>
-                    sign
+                    SIGN UP NOW!!
                 </button>
             </div>
 
             <div class="flex align-items">
-                <div class="text-footer">follow</div>
+                <div class="text-footer">FOLLOW US</div>
                 <div class="flex">
                     <img class="margin-left-10 {" v-for="(elem) in logoSocial" :src="getImagePath ('/img/' + elem)" alt="">
                 </div>    
@@ -82,4 +86,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+button {
+    padding: 10px;
+    border: 1px solid #1B60C5;
+    background-color: #1C1C1C;
+    color: white;
+}
 </style>

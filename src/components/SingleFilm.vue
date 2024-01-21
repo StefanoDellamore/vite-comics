@@ -18,7 +18,7 @@ export default {
             <img :src="thumb" :alt="type">
         </div>
         <p>
-        {{ series }}
+            {{ series }}
         </p>
     </div>
 
